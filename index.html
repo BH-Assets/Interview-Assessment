@@ -3,36 +3,158 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Interview Assessment – Operations Management</title>
+  <title>Bailey-Harris Construction | Interview Assessment</title>
+
+  <!-- Google Fonts (Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+
   <style>
-    :root { --bg:#0b1220; --card:#121a2b; --text:#e9eef7; --muted:#b8c2d9; --accent:#7aa2ff; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif; background:var(--bg); color:var(--text); }
-    .wrap { max-width:900px; margin:0 auto; padding:40px 20px; }
-    h1 { margin:0 0 12px; font-size:28px; }
-    p.lead { color:var(--muted); margin:0 0 28px; }
-    .grid { display:grid; gap:16px; }
-    .card { background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:18px 18px; }
-    .title { font-weight:600; margin:0 0 6px; }
-    .desc { color:var(--muted); margin:0 0 12px; }
-    .btns { display:flex; gap:10px; flex-wrap:wrap; }
-    a.btn { text-decoration:none; padding:10px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.14); }
-    a.view { background:transparent; color:var(--text); }
-    a.download { background:var(--accent); color:#081226; border-color:transparent; }
-    footer { color:var(--muted); margin-top:32px; font-size:14px; }
-    .small { font-size:13px; color:var(--muted); }
+    :root {
+      --red: #ED2B30;
+      --text: #211E1E;
+      --bg: #ffffff;
+      --muted: #4A4A4A;
+      --border: #E6E6E6;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Montserrat", "Aptos", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header img {
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: "Montserrat", "Aptos Black", sans-serif;
+      font-weight: 800;
+      font-size: 28px;
+      margin: 0;
+      color: var(--text);
+    }
+
+    p.lead {
+      font-family: "Montserrat", "Aptos Regular Italic", sans-serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 10px auto 30px;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .title {
+      font-family: "Montserrat", "Aptos Black", sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 6px;
+      color: var(--text);
+    }
+
+    .desc {
+      font-family: "Montserrat", "Aptos Regular", sans-serif;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    a.btn {
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 2px solid var(--red);
+      transition: background 0.25s ease, color 0.25s ease;
+      font-family: "Montserrat", "Aptos Regular", sans-serif;
+    }
+
+    a.view {
+      background: transparent;
+      color: var(--red);
+    }
+
+    a.view:hover {
+      background: var(--red);
+      color: #fff;
+    }
+
+    a.download {
+      background: var(--red);
+      color: #fff;
+    }
+
+    a.download:hover {
+      background: #b51e22;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header img { max-width: 200px; }
+      h1 { font-size: 22px; }
+      .card { padding: 16px; }
+    }
   </style>
 </head>
+
 <body>
-  <main class="wrap">
+  <header>
+    <img src="https://github.com/BH-Assets/Company-Assets/blob/31ee8e2e28a7579ac5e94ef90cc87f507a167086/BaileyHarris_BrandingGuide_Primary-Full_SMALL-02.png?raw=true"
+         alt="Bailey-Harris Construction Logo" />
     <h1>Interview Assessment – Operations Management</h1>
     <p class="lead">
-      Documentation for the <strong>AU Pharmacy Structural Works</strong> review. Files are available to view in browser or download.
+      Documentation for the <strong>AU Pharmacy Structural Works Demo Project</strong> assessment. Files are available below to view or download.
     </p>
+  </header>
 
+  <main>
     <section class="grid">
       <article class="card">
-        <h2 class="title">AU Pharmacy – Structural Works</h2>
-        <p class="desc">Primary structural documentation for AU Pharmacy.</p>
+        <h2 class="title">Estimate</h2>
+        <p class="desc">Primary estimate for project.</p>
         <div class="btns">
           <a class="btn view" href="/AU%20Pharmacy%20-%20Structural%20Works.pdf" target="_blank" rel="noopener">View</a>
           <a class="btn download" href="/AU%20Pharmacy%20-%20Structural%20Works.pdf" download>Download</a>
@@ -40,8 +162,8 @@
       </article>
 
       <article class="card">
-        <h2 class="title">2016.02.11 – 14-193 Pharmacy Executed Contract (Received from AU)</h2>
-        <p class="desc">Executed contract documents from AU.</p>
+        <h2 class="title">Executed Contract</h2>
+        <p class="desc">Executed contract documents.</p>
         <div class="btns">
           <a class="btn view" href="/2016.02.11%20-%2014-193%20Pharmacy%20Executed%20Contract%20Received%20from%20AU.pdf" target="_blank" rel="noopener">View</a>
           <a class="btn download" href="/2016.02.11%20-%2014-193%20Pharmacy%20Executed%20Contract%20Received%20from%20AU.pdf" download>Download</a>
@@ -49,7 +171,7 @@
       </article>
 
       <article class="card">
-        <h2 class="title">Combined Specs Issued for Construction Set</h2>
+        <h2 class="title">Specs</h2>
         <p class="desc">Specifications issued for construction reference.</p>
         <div class="btns">
           <a class="btn view" href="/Combined%20Specs%20Issued%20for%20Construction%20Set.pdf" target="_blank" rel="noopener">View</a>
@@ -58,7 +180,7 @@
       </article>
 
       <article class="card">
-        <h2 class="title">AU PRB – Structural Works IFC Set</h2>
+        <h2 class="title">Drawings</h2>
         <p class="desc">IFC structural documentation for AU PRB.</p>
         <div class="btns">
           <a class="btn view" href="/AU%20PRB-%20Structural%20Works%20IFC%20Set.pdf" target="_blank" rel="noopener">View</a>
@@ -66,10 +188,10 @@
         </div>
       </article>
     </section>
-
-    <footer>
-      <p class="small">Contact: marketing@baileyharris.com • © Bailey-Harris Construction</p>
-    </footer>
   </main>
+
+  <footer>
+    <p>© Bailey-Harris Construction • Contact for file access troubleshooting: tiffany.blackmon@baileyharris.com</p>
+  </footer>
 </body>
 </html>
